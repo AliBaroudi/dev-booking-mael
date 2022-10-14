@@ -1,0 +1,7 @@
+<h2>Attacher un restaurant à une réservation</h2>
+<form method="post" action="ton_action">
+        <h2 for="le_nom">MA LISTE</h2>
+        <select name="le_nom" id="le_nom">
+            <option *ngFor="let booking of bookings" value="ta_valeur">{{booking.name}}</option>  
+        </select>
+ </form>

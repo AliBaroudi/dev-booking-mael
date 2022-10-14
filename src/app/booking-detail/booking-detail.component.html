@@ -1,0 +1,14 @@
+<h2>Saisir une nouvelle réservation</h2>
+<div>
+    <label for="name">Name : </label>
+    <input id="name" [(ngModel)]= "booking.name" placeholder="name">
+    <label for="date">Date : </label>
+    <input id="date" [(ngModel)]= "booking.date" placeholder="date" type="date">
+    <label for="id">Id : </label>
+    <input id="id" [(ngModel)]= "booking.id" placeholder="id" readonly="true">
+    <label for="size">Nombre de Convive : </label>
+    <input id="size" [(ngModel)]= "booking.size" placeholder="size">
+    <label for="restaurantId">RestaurantId :  </label>
+    <input id="restaurantId" [(ngModel)]= "booking.restaurantId" placeholder="restaurantId">
+    <button type="button" (click)="save()">Sauvegarder</button>
+</div>
